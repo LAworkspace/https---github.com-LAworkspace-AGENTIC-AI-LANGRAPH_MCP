@@ -2,14 +2,25 @@
 
 ## Overview
 
-Chatbot AI Agent is a Python-based project designed to create intelligent chatbot systems using advanced AI frameworks such as LangChain, LangGraph, and LangSmith. This project enables the development of conversational agents capable of understanding and responding to user queries effectively.
+Chatbot AI Agent is a Python-based project designed to create intelligent chatbot systems using advanced AI frameworks such as LangChain, LangGraph, and LangSmith. This project enables the development of conversational agents capable of understanding and responding to user queries effectively. It also supports multi-agent architectures for complex workflows and decision-making.
 
 ## Features
 
 - **Interactive Chatbot**: Build and deploy chatbots with ease.
+- **Multi-Agent Architecture**: Utilize multiple agents for specialized tasks, such as search, human assistance, and tool integration.
+- **Graph-Based Workflow**: Use LangGraph to define stateful and conditional workflows for multi-agent systems.
 - **Tool Integration**: Leverage tools like TavilySearch and human assistance for enhanced functionality.
-- **Graph-Based Workflow**: Utilize LangGraph for stateful and conditional workflows.
 - **Environment Configuration**: Manage API keys and settings using `.env` files.
+
+## Multi-Agent Architecture
+
+This project uses a graph-based architecture to manage multiple agents. Each agent is represented as a node in the graph, and conditional edges define the flow of information between agents. Key components include:
+
+- **StateGraph**: Manages the state and transitions between nodes.
+- **ToolNode**: Integrates tools like TavilySearch and human assistance.
+- **Conditional Edges**: Define logic for transitioning between agents based on conditions.
+
+The architecture allows for modular and scalable development, enabling the addition of new agents and tools as needed.
 
 ## Requirements
 
